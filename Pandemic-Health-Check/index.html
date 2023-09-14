@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <title>G20-health care</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon/icon.ico">
+    </head>
+    <body>
+        <div id="wrapper">
+            <section id="landing">
+                <div class="navbar"><ul><li class="first" style=" border-bottom: 2px solid white;  margin: 40px;">Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>More info</li></ul></div>
+              
+                <div class="theory col-10 col-md-6 offset-1 p-10" >
+                    <h1>orBIT: </h1>
+                    <h3>Navigating a healthier future together.</h3>
+                    <p class="line"></p>
+                    <h4>Analyse symptoms, improve mental health</h4>
+                </div>
+              
+                <img src="robo.png" class="robo" alt="">
+              
+           
+                
+                <img class="d-lg-block d-none" src="images/design1.png" alt="design">
+            </section>
+            <div class="container">
+                <div class="item">
+                    <img src="healthtest.png" alt="">
+                     <h3>Lorem ipsum dolor sit amet.</h3>
+                     <a href="" class="btn-grad">Take test</a></div>
+                     
+                <div class="item">
+                    <img src="records.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                     <a href="" class="btn-grad">Take test</a></div>
+                <div class="item">
+                    <img src="Doctor.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                     <a href="" class="btn-grad">Take test</a>
+                </div>
+              </div>
+            <br><br>
+            <section id="quiz">
+                <div class="col-8 col-lg-4 offset-2 offset-lg-4">
+                    <h2 class="text-center">Analyse your symptoms</h2>
+                    <p class="line"></p>
+                    <br><br><br><br>
+                    <form id="form">
+                        <div class="question">
+                            <h3>DO YOU HAVE FEVER</h3>
+                            <div>
+                                <input type="radio" name="COUGH" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="COUGH" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Muscle Aches</h3>
+                            <div>
+                                <input type="radio" name="MUSCLE_ACHES" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="MUSCLE_ACHES" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Tiredness</h3>
+                            <div>
+                                <input type="radio" name="TIREDNESS" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="TIREDNESS" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Sore Throat</h3>
+                            <div>
+                                <input type="radio" name="SORE_THROAT" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="SORE_THROAT" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Runny Nose</h3>
+                            <div>
+                                <input type="radio" name="RUNNY_NOSE" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="RUNNY_NOSE" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Stuffy Nose</h3>
+                            <div>
+                                <input type="radio" name="STUFFY_NOSE" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="STUFFY_NOSE" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Fever</h3>
+                            <div>
+                                <input type="radio" name="FEVER" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="FEVER" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Nausea</h3>
+                            <div>
+                                <input type="radio" name="NAUSEA" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="NAUSEA" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Vomiting</h3>
+                            <div>
+                                <input type="radio" name="VOMITING" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="VOMITING" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Diarrhea</h3>
+                            <div>
+                                <input type="radio" name="DIARRHEA" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="DIARRHEA" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Shortness of Breath</h3>
+                            <div>
+                                <input type="radio" name="SHORTNESS_OF_BREATH" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="SHORTNESS_OF_BREATH" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Difficulty Breathing</h3>
+                            <div>
+                                <input type="radio" name="DIFFICULTY_BREATHING" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="DIFFICULTY_BREATHING" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Loss of Taste</h3>
+                            <div>
+                                <input type="radio" name="LOSS_OF_TASTE" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="LOSS_OF_TASTE" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Loss of Smell</h3>
+                            <div>
+                                <input type="radio" name="LOSS_OF_SMELL" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="LOSS_OF_SMELL" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Itchy Nose</h3>
+                            <div>
+                                <input type="radio" name="ITCHY_NOSE" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="ITCHY_NOSE" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Itchy Eyes</h3>
+                            <div>
+                                <input type="radio" name="ITCHY_EYES" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="ITCHY_EYES" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Itchy Mouth</h3>
+                            <div>
+                                <input type="radio" name="ITCHY_MOUTH" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="ITCHY_MOUTH" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Itchy Inner Ear</h3>
+                            <div>
+                                <input type="radio" name="ITCHY_INNER_EAR" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="ITCHY_INNER_EAR" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Sneezing</h3>
+                            <div>
+                                <input type="radio" name="SNEEZING" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="SNEEZING" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question">
+                            <h3>Pink Eye</h3>
+                            <div>
+                                <input type="radio" name="PINK_EYE" value="1" onclick="enable()">
+                                <img src="images/yes.png" alt="yes">
+                            </div>
+                            <div>
+                                <input type="radio" name="PINK_EYE" value="0" onclick="enable()">
+                                <img src="images/no.png" alt="no">
+                            </div>
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                        <div class="question text-center">
+                            <h3>Generate an Analysis Report</h3>
+                            <input type="submit" value="Generate">
+                            <br>
+                            <h4 class="float-start" onclick="prev()">PREV</h4>
+                            <h4 class="float-end" onclick="next()">NEXT</h4>
+                        </div>
+                    </form>
+                </div>
+                <br><br>
+                <div class="text-center" id="prediction">
+                    <h3></h3>
+                    <h4></h4>
+                    
+                    <p>Predictions by this analysis, can by no means be treated as a medical report. These are just for providing a better mental health.</p>
+                </div>
+                <img class="d-lg-block d-none" src="images/design2.png" alt="design">
+                <img class="d-lg-block d-none" src="images/design2.png" alt="design">
+            </section>
+            <section id="help">
+                <div class="col-10 col-md-6 col-lg-4 offset-1 offset-md-5 offset-lg-7 p-10">
+                    <h1>Help Desk</h1>
+                    <p class="line"></p>
+                    <br>
+                    <h4>More Information</h4>
+                    <p><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</a></p>
+                    <br>
+                    <h4>Email Address</h4>
+                    <p><a href="mailto:test_email@example.com">test_email@example.com</a></p>
+                    <br>
+                    <h4>Dr. ABC</h4>
+                    <p><a href="tel:(987)123456">(987) 123 456</a></p>
+                    <h4>Dr. XYZ</h4>
+                    <p><a href="tel:(987)123456">(987) 123 456</a></p>
+                </div>
+                <img class="d-lg-block d-none" src="images/design1.png" alt="design">
+            </section>
+        </div>
+        <footer>
+            <h3 class="text-center">Copyright &copy; 2021 Sanket Mathur</h3>
+            <a href="https://github.com/Sanket-Mathur/Pandemic-Health-Check" target="_blank">
+                <img src="images/GitHub-Mark-120px-plus.png" alt="">
+            </a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+         
+
+        <script type="text/javascript">
+            (function(d, m){
+                var kommunicateSettings = 
+                    {"appId":"28193d09fb7636fbda7498b6b6158fde7","popupWidget":true,"automaticChatOpenOnNavigation":true};
+                var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+                s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+                var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+                window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+        </script>
+         
+ 
+        
+           
+    </body>
+</html>
